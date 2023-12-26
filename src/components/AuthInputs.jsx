@@ -1,11 +1,5 @@
 import { useState } from 'react';
-import styled from 'styled-components'
 
-
-const Label = styled.label`
-  color: yellow;
-  align-item: center;
-`
 
 export default function AuthInputs() {
   const [enteredEmail, setEnteredEmail] = useState('');
@@ -31,7 +25,7 @@ export default function AuthInputs() {
     <div id="auth-inputs">
       <div className="controls">
         <p>
-          <Label>Email</Label>
+          <label>Email</label>
           <input
             type="email"
             className={emailNotValid ? 'invalid' : undefined}
